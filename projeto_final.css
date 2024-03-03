@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: rgb(235, 232, 232);
+}
+
+header, main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+}
+ header h1{
+   margin-top: 5%;
+    font-size: 50px;
+    letter-spacing: 3px;
+ }
+
+ main{
+    width: 60%;
+    margin: 2% auto;
+    background-color: rgba(14, 14, 14, 0.18) ;
+    backdrop-filter: blur(20%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+
+ .input{
+    width: 98%;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+ main input[type="text"]{
+    width: 80%;
+    height: 4rem;
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 15px;
+    /* outline: none; */
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border: 2px solid black;
+   margin-right: 0;
+ }
+
+ button{
+    width: 25%;
+    height: 4rem;
+    font-size: 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(140, 235, 46);
+    border: 2px solid black;
+    border-left: none;
+    font-weight: 600;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+ }
+
+button:hover{
+    background-color: rgb(181, 248, 114);
+    transition: 0.2s;
+ }
+
+ .item{
+    width: 98%;
+    border: 2px solid black;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0.6rem;
+    border-radius: 20px;
+ }
+
+ /* .item-icone{
+    width: 15%;
+    border: 1px solid deeppink;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    cursor: pointer;
+ } */
+
+ .item-texto{
+    width: 90%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    padding-left: 4%;
+    font-size: 20px;
+    flex-flow: row wrap;
+    cursor:pointer;
+ }
+ 
+
+ .item-delete{
+    width: 30%;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 78, 78);
+    flex-flow: row wrap;
+    border-left: 2px solid black;
+    cursor: pointer;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+      }
+
+ .item-feito{
+    width: 98%;
+    border: 2px solid black;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 20px;
+ }
+
+ .item-feito .item-icone{
+    background-color:  rgb(181, 248, 114);
+ }
+
+ .item-feito .item-texto{
+    background-color:  rgb(181, 248, 114);
+    text-decoration: line-through;
+    color: rgb(63, 63, 63);
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+ }
+
+ @media only screen and (max-width:580px){
+  header h1{
+      font-size: 43px;
+      text-wrap: nowrap;
+   }
+   main input[type="text"]{
+      font-size: 1.1rem;
+   }
+   main button{
+     font-size: 0.65rem;
+   }
+   .item-delete span{
+      font-size: 0.87rem;
+   }
+ }
+
+ 
