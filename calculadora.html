@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="calculadora">
+            <div type="text" id="resultado" name="text1" class=""></div>
+            
+
+            <div class="numeros">
+                <button name="addbtn" class="orange" onclick="insert('+;')">&plus;</button>
+            <button name="minusbtn" class="orange"  onclick="insert('-')">&minus;</button>
+            <button name="mulbtn" class="orange"  onclick="insert('*')" >&times;</button>
+            <button name="dividebtn" class="orange"  onclick="insert('/')">&divide;</button>
+
+
+            <button value="7" name="btn7" class="black" onclick="insert('7')">7</button>
+            <button value="8" name="btn8" class="black" onclick="insert('8')">8</button>
+            <button value="9" name="btn9" class="black" onclick="insert('9')">9</button>
+            <button value="C" name="text12" class="reload" onclick="location.reload()">C</button>
+
+
+
+            <button value="4" name="btn4"  class="black"onclick="insert('4')">4</button>
+            <button value="5" name="btn5"  class="black"onclick="insert('5')">5</button>
+            <button value="6" name="bt6" class="black" onclick="insert('6')">6</button>
+            <button onclick="back()" class="orange">&LeftArrow;</button>
+  
+
+            <button value="1" name="btn1" class="black" onclick="insert('1')">1</button>
+            <button value="2" name="btn2" class="black" onclick="insert('2')">2</button>
+            <button value="3" name="btn3" class="black" onclick="insert('3')">3</button>
+
+
+            <button value="0" name="btn0" class="black" id="zero" onclick="insert('0')">0</button>
+            <button name="commabtn" class="black" onclick="insert('&comma;')">&comma;</button>
+            <button name="equalsbtn" class="orange" id="equal" onclick="calcular()">&equals;</button>
+           
+            </div>
+            
+    </main>
+
+    <script src="../JAVASCRIPT/calculadora.js"></script>
+</body>
+</html>
